@@ -1,0 +1,23 @@
+{
+  "name": "recipe-book",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "bootstrap": "^4.5.3",
+    "easy-pie-chart": "^2.1.7",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^3.0.0",
+    "mongoose": "^5.10.10",
+    "mongoose-unique-validator": "^2.0.3",
+    "multer": "^1.4.2",
+    "ngx-embed-video": "^1.0.4",
+    "npm": "^6.14.8",
+    "parse5": "^6.0.1",
+    "request": "^2.88.2",
+    "screenfull": "^3.3.3",
+    "stringify.js": "^0.2.0",
+    "tslib": "^2.0.0"
+  }
+}
