@@ -4,6 +4,8 @@ const app = express();
 
 const mongoose = require('mongoose');
 
+const port = process.env.PORT || 3000;
+
 mongoose.connect
 (
   process.env.MONGO_DB_URL,
@@ -20,9 +22,9 @@ mongoose.connect
   }
 ).catch
 (
-  ()=>
+  (e)=>
   {
-    console.log("Connection to database failed");
+    console.log(e, "Connection to database failed");
   }
 );
 
@@ -59,6 +61,15 @@ app.use("/api/user",userRoutes);
 
 const recipeRoutes = require('./routes/recipe');
 app.use("/api/recipe",recipeRoutes);
+
+app.listen
+(
+  port,
+  ()=>
+  {
+    console.log("Server is running on port",port);
+  }
+);
 
 module.exports = app;
 
