@@ -87,7 +87,6 @@ exports.newOrUpdateRecipe = async (request, response, next)=>
 
 exports.getRecipes = async (request,response,next)=>
 {
-  console.log(process.env);
   const recipeQuery = Recipe.find();
 
   let fetchedRecipes;
