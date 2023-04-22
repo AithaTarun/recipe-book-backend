@@ -12,7 +12,9 @@ mongoose.connect
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useCreateIndex : true
+    useCreateIndex : true,
+    readPreference: 'secondary',
+    slaveOk: true
   }
 ).then
 (
