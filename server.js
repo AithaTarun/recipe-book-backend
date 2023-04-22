@@ -6,6 +6,8 @@ const mongoose = require('mongoose');
 
 const port = process.env.PORT || 3000;
 
+console.log(process.env);
+
 mongoose.connect
 (
   process.env.MONGO_DB_URL,
